@@ -16,6 +16,6 @@
 .prettierignore
 
 3-column-preview-card-component-main
-node-modules
+node_modules
 package-lock.json
 package.json
