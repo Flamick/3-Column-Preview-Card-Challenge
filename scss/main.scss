@@ -50,7 +50,7 @@ body {
         font-family: $secondary-font;
         margin-bottom: 1.2rem;
         text-transform: uppercase;
-        font-size: clamp(2.6rem, 6vw, 3rem);
+        font-size: clamp(2.6rem, 6vw, 2.8rem);
     }
 
     p {
@@ -58,7 +58,7 @@ body {
         font-family: $primary-font;
         margin-bottom: clamp(1.6rem, 5vh, 2.4rem);
         font-size: clamp(15px, 2vw, 1.1rem);
-        line-height: clamp(1.7rem, 3vw, 2.2rem );
+        line-height: clamp(1.7rem, 2vw, 2.2rem );
     }
 }
 
