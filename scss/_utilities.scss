@@ -1,0 +1,52 @@
+.container {
+    margin: 0 auto;
+    width: 88%;
+    max-width: 950px;
+}
+
+%btn-shared {
+    text-decoration: none;
+    color: transparent;
+    padding: .7rem 1.86rem;
+    background: $medium-color;
+    display: inline-block;
+    border-radius: 100px;
+    font-family: $primary-font;
+}
+
+.btn {
+    @extend %btn-shared;
+
+    &-primary {
+        color: $primary-color;
+        border: 3px solid $medium-color;
+
+        &:hover {
+            background: $primary-color;
+            color: $medium-color;
+            border: 3px solid $medium-color;
+        }
+    }
+
+    &-secondary {
+        color: $secondary-color;
+        border: 3px solid $medium-color;
+
+        &:hover {
+            background: $secondary-color;
+            color: $medium-color;
+            border: 3px solid $medium-color;
+        }
+    }
+
+    &-backup {
+        color: $backup-color;
+        border: 3px solid $medium-color;
+
+        &:hover {
+            background: $backup-color;
+            color: $medium-color;
+            border: 3px solid $medium-color;
+        }
+    }
+}

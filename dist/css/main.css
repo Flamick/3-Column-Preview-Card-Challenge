@@ -1,0 +1,100 @@
+.container {
+  margin: 0 auto;
+  width: 88%;
+  max-width: 950px; }
+
+.btn {
+  text-decoration: none;
+  color: transparent;
+  padding: .7rem 1.86rem;
+  background: #f2f2f2;
+  display: inline-block;
+  border-radius: 100px;
+  font-family: "Lexend Deca", sans-serif; }
+
+.btn-primary {
+  color: #e38826;
+  border: 3px solid #f2f2f2; }
+  .btn-primary:hover {
+    background: #e38826;
+    color: #f2f2f2;
+    border: 3px solid #f2f2f2; }
+
+.btn-secondary {
+  color: #006970;
+  border: 3px solid #f2f2f2; }
+  .btn-secondary:hover {
+    background: #006970;
+    color: #f2f2f2;
+    border: 3px solid #f2f2f2; }
+
+.btn-backup {
+  color: #004241;
+  border: 3px solid #f2f2f2; }
+  .btn-backup:hover {
+    background: #004241;
+    color: #f2f2f2;
+    border: 3px solid #f2f2f2; }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #f2f2f2;
+  font-size: 15px; }
+
+#main {
+  padding: 5.4rem 0; }
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem; }
+
+.card-1 {
+  background: #e38826;
+  border-radius: 10px 10px 0 0; }
+
+.card-2 {
+  background: #006970; }
+
+.card-3 {
+  background: #004241;
+  border-radius: 0 0 10px 10px; }
+
+.col {
+  padding: 3rem; }
+  .col i img {
+    margin-bottom: clamp(1.6rem, 5vh, 3rem); }
+  .col h1, .col h2 {
+    color: #f2f2f2;
+    font-family: "Big Shoulders Display", cursive;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+    font-size: clamp(2.6rem, 8vw, 3.4rem); }
+  .col p {
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "Lexend Deca", sans-serif;
+    margin-bottom: clamp(1.6rem, 5vh, 3rem);
+    font-size: clamp(15px, 3vw, 1.6rem);
+    line-height: clamp(1.7rem, 4vw, 2.7rem); }
+
+@media screen and (min-width: 1000px) {
+  #main {
+    padding: 10.4rem 0; }
+  .flex-container {
+    flex-direction: row; }
+  .col i img {
+    margin-bottom: 1.6rem; }
+  .col h1, .col h2 {
+    font-size: 2.6rem; }
+  .col p {
+    font-size: 15px;
+    line-height: 1.7rem;
+    margin-bottom: 4rem; }
+  .card-1 {
+    border-radius: 10px 0 0 10px; }
+  .card-3 {
+    border-radius: 0 10px 10px 0; } }

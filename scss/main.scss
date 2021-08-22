@@ -1,0 +1,99 @@
+@import "config";
+@import "utilities";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $medium-color;
+    font-size: 15px;
+}
+
+#main {
+    padding: 5.4rem 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.card {
+    &-1 {
+        background: $primary-color;
+        border-radius: 10px 10px 0 0;
+    }
+
+    &-2 {
+        background: $secondary-color;
+    }
+
+    &-3 {
+        background: $backup-color;
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+.col {
+    padding: 3rem;
+
+    i img {
+        margin-bottom: clamp(1.6rem, 5vh, 3rem);
+    }
+
+    h1, h2 {
+        color: $medium-color;
+        font-family: $secondary-font;
+        margin-bottom: 1.2rem;
+        text-transform: uppercase;
+        font-size: clamp(2.6rem, 8vw, 3.4rem);
+    }
+
+    p {
+        color: $light-color;
+        font-family: $primary-font;
+        margin-bottom: clamp(1.6rem, 5vh, 3rem);
+        font-size: clamp(15px, 3vw, 1.6rem);
+        line-height: clamp(1.7rem, 4vw, 2.7rem );
+    }
+}
+
+@media screen and (min-width:1000px) {
+    #main {
+        padding: 10.4rem 0;
+    }
+
+    .flex-container {
+        flex-direction: row;
+    }
+
+    .col {
+        i img {
+            margin-bottom: 1.6rem;
+        }
+
+        h1, h2 {
+            font-size: 2.6rem;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.7rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    .card{
+        &-1 {
+            border-radius: 10px 0 0 10px;
+        }
+
+        &-3 {
+            border-radius: 0 10px 10px 0;
+        }
+    }
+}
