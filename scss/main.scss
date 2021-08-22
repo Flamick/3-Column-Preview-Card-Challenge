@@ -25,7 +25,7 @@ body {
 .card {
     &-1 {
         background: $primary-color;
-        border-radius: 20px 20px 0 0;
+        border-radius: 10px 10px 0 0;
     }
 
     &-2 {
@@ -34,7 +34,7 @@ body {
 
     &-3 {
         background: $backup-color;
-        border-radius: 0 0 20px 20px;
+        border-radius: 0 0 10px 10px;
     }
 }
 
@@ -89,11 +89,11 @@ body {
 
     .card{
         &-1 {
-            border-radius: 20px 0 0 20px;
+            border-radius: 10px 0 0 10px;
         }
 
         &-3 {
-            border-radius: 0 20px 20px 0;
+            border-radius: 0 10px 10px 0;
         }
     }
 }
