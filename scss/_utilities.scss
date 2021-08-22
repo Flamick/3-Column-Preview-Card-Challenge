@@ -1,7 +1,7 @@
 .container {
     margin: 0 auto;
     width: 88%;
-    max-width: 950px;
+    max-width: 960px;
 }
 
 %btn-shared {
@@ -12,6 +12,7 @@
     display: inline-block;
     border-radius: 100px;
     font-family: $primary-font;
+    transition: all 0.3s ease 0s;
 }
 
 .btn {
